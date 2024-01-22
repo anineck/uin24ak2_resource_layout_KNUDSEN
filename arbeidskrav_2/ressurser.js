@@ -112,6 +112,7 @@ function categoryValg(index) {
     });
 
     navTags[index].classList.add("active");
+    // denne delen av koden gjør at man tydelig ser hvilken av kategori sidene man er på/ klikket på.
 }
 
     categoryValg(0); //Gjør at man starter på rett på HTML-siden
