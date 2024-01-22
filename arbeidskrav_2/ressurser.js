@@ -104,9 +104,14 @@ function categoryValg(index) {
     list.innerHTML = resource.sources.map(source => 
         `<li><a href="${source.url}">${source.title}</a></li>`
     ).join('');
+
+
+    const navTags = document.querySelectorAll(".navtag");// bruker querySelectorAll() metoden for å returnere elemter som matcher css koden 
+    navTags.forEach(navTag => {
+        navTag.classList.remove("active");
+    });
+
+    navTags[index].classList.add("active");
 }
 
-categoryValg(0); //Gjør at man starter på rett på HTML-siden
-
-
- 
+    categoryValg(0); //Gjør at man starter på rett på HTML-siden
