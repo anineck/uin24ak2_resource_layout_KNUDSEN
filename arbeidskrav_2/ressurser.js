@@ -94,3 +94,19 @@ const resources = [
         ]
     },
 ]
+
+function categoryValg(index) {
+    const resource = resources[index];
+    document.getElementById("overskrift").innerHTML = resource.category;
+    document.getElementById("tekst").innerHTML = resource.text;
+
+    const list = document.getElementById("kategoriliste");
+    list.innerHTML = resource.sources.map(source => 
+        `<li><a href="${source.url}">${source.title}</a></li>`
+    ).join('');
+}
+
+categoryValg(0); //Gjør at man starter på rett på HTML-siden
+
+
+ 

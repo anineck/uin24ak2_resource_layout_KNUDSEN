@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ressursarkiv</title>
+    <link href="style.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <div id="container">
+        <header>
+            
+        </header>
+        <nav>
+            <ul>
+                <li><a class="navtag" onclick="categoryValg(0)">HTML</a></li>
+                <li><a class="navtag" onclick="categoryValg(1)">CSS</a></li> 
+                <li><a class="navtag" onclick="categoryValg(2)">JavaScript</a></li> 
+                <li><a class="navtag" onclick="categoryValg(3)">React</a></li>
+                <li><a class="navtag" onclick="categoryValg(4)">Sanity and Headless CMS</a></li>
+                <!--lagde a classe med klikke funksjon og la til indexer da det er flere klikkeelementer, med kun forskjellige navn derfor 
+                er et samme klasse navn og funksjons navn, men med ulik indeks så det blir enklere å skrive ut til siden i javascript-->
+            </ul>
+        </nav>
+
+        <main>
+            <h2 id="overskrift"></h2> 
+            <p id="tekst"></p>
+            <ul id="kategoriliste"></ul>
+            <!--lagde id på det som skulle viser på de ulike sidene, da det er enklest å definere i javascript-->
+        </main>
+        </div>
+  
+    
+<script src="ressurser.js"></script>
+</body>
+</html>
