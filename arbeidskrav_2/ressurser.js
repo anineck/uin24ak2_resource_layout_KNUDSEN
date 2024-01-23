@@ -106,7 +106,8 @@ function categoryValg(index) {
     ).join('');
 
 
-    const navTags = document.querySelectorAll(".navtag");// bruker querySelectorAll() metoden for å returnere elemter som matcher css koden 
+    const navTags = document.querySelectorAll(".navtab");// bruker querySelectorAll() metoden for å returnere elemter som matcher css koden
+    //kilde: https://www.w3schools.com/jsref/met_document_queryselectorall.asp 
     navTags.forEach(navTag => {
         navTag.classList.remove("active");
     });
